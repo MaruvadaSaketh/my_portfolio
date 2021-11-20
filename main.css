@@ -1,0 +1,125 @@
+/* @import 'css/sp2.css'; */
+:root{
+    ---primary: #3dcfd3;
+    ---dark:#161616;
+    ---pure:#ffffff;
+    ---ternary:#898989;
+    ---light:#f2f2f2;
+}
+body{
+    font-family: 'poppins';
+    background-image: linear-gradient(
+        white,white, rgb(0, 195, 255)
+    );
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiashed;
+}
+header{
+    margin-top: 10px;
+    background-color: var(---dark);
+    height: 1000px;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 80%, 0 100%); */
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(---pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(---primary);
+    /* background-color: pink ; */
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 2rem;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline:none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-primary{
+    background-color: var(---primary);
+    color: var(---secondary);
+    text-transform: uppercase;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(---primary);
+    color: var(---primary);
+}
+.hero .left img{
+    width: 350px;
+    border-style: groove;
+    border-radius: 25pc;
+}
+.hero .right{
+    color:white;
+    margin-left: 10rem;
+}
+.hero .right h6{
+    font-size: 2.6rem;
+    color:var(---primary);
+}
+.hero .right h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin: bottom 3rem; ;
+}
+.hero .right h1 span{
+    font-size: 3rem;
+    color: var(---primary);
+}
+.hero .right p{
+    size: 2rem;
+    line-height: 1.9;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.bnt-secondary{
+    padding: 1rem;
+    text-transform: uppercase;
+    size: 10px;
+    background-color: transparent;
+    color: var(---primary);
+    border-color: var(---primary); 
+}
+.bnt-secondary:hover{
+    background: var(---primary);
+    color: var(---secondary);
+}
+.justify-center{
+    justify-content: center ;
+}
+.flex-1{
+    flex:1;
+}
+.flex{
+    display: flex;
+}
+.item-center{
+    align-items:center;
+}
+.justify-between{
+    justify-content: space-between;
+}
